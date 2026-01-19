@@ -27,7 +27,6 @@ class ChatBot:
         selected_instruction = prompts.get(personality, prompts["Professional"])
 
         # --- UNIVERSAL FIX (No Config Error) ---
-        # Hum instruction ko chat history mein chupke se daal denge
         initial_history = [
             {
                 "role": "user",
@@ -40,7 +39,7 @@ class ChatBot:
         ]
 
         try:
-            # Sirf history pass kar rahay hain (No config error now)
+            
             self.chat = model.start_chat(history=initial_history)
         except Exception as e:
             print(f"Error: {e}")
