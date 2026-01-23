@@ -206,7 +206,7 @@ if len(st.session_state.messages) == 0:
     st.markdown('<span class="lily-title">Hello, Ibi.</span>', unsafe_allow_html=True)
     st.markdown('<div class="lily-sub">How can Lily assist you today?</div>', unsafe_allow_html=True)
 
-    # Suggestion Chips (Grid Layout)
+    
     st.markdown("""
     <div class="card-container">
         <div class="suggestion-card">
